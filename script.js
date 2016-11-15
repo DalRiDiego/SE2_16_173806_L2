@@ -1,3 +1,6 @@
+var qmax = 30;
+var qatt = 0;
+
 function display(){
 	document.getElementById("vis").className = "hide";
 	document.getElementById("data").className = "";
@@ -14,8 +17,14 @@ function addItem(){
 	if(nome == "" ||  qta == ""){
 		return;
 	}
-	
+
 	qta = parseInt(qta);
+	if(qatt+qta>qmax){
+		alert("Impossibile aggiungere l'elemento, viene superata la capacita' massima");
+		return;
+	}
+	qatt+=qta;
+	
 	var tabella = document.getElementById("tabella").rows;
 	var i;
 	for (i=0; i<tabella[0].cells.length && i>-1; i++){
