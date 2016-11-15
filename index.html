@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Shopping Cart </title>
+	<title> Wharehouse </title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="script.js" > </script>
 </head>
 <body>
-	<h1> Shopping Cart </h1>
-	<table id="tabella">
+	<h1> Warehouse</h1>
+	<table id="tabella" border=1>
 	</table>
+	<button id="vis" onclick="display()"> Effettua un nuovo ordine </button> 
+	<div id="data" class="hide">
+		<label> Nome elemento: </label>
+		<input type="text" id="nome" placeholder="nome elemento" />
 
-	<div id="data">
+		<label> Quantit&agrave: </label>
+		<input type="number" min="0" id="qta" placeholder="nome elemento" />
+
+		<button id="add"> Aggiungi ordine </button>
 	</div>
 <body>
 </html>
