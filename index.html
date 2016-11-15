@@ -8,16 +8,20 @@
 <body>
 	<h1> Warehouse</h1>
 	<table id="tabella" border=1>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
 	</table>
 	<button id="vis" onclick="display()"> Effettua un nuovo ordine </button> 
 	<div id="data" class="hide">
 		<label> Nome elemento: </label>
 		<input type="text" id="nome" placeholder="nome elemento" />
 		<br/>
-		<label> Quantit&agrave: </label>
-		<input type="number" min="0" id="qta" placeholder="nome elemento" />
+		<label> Quantit&agrave;: </label>
+		<input type="number" min="0" id="qta" placeholder="quantit&agrave; elemento" />
 		<br/>
-		<button id="add"> Aggiungi ordine </button>
+		<button id="add" onclick="addItem()"> Aggiungi ordine </button>
 	</div>
 <body>
 </html>
