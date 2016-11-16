@@ -3,18 +3,21 @@
 <head>
 	<title> Wharehouse </title>
 	<link rel="stylesheet" href="style.css" />
-	<script type="text/javascript" src="script.js" > </script>
+	<script type="text/javascript" src="script.js"> </script>
 </head>
 <body>
 	<h1> Warehouse</h1>
 	<table id="tabella" border=1>
 		<tr>
+			<th>Nome</th>
 		</tr>
 		<tr>
+			<th>Quantit&agrave;</th>
 		</tr>
 	</table>
-	<label> Quantit&agrave; massima : 30 </label> <br/>
-	<button id="vis" onclick="display()"> Effettua un nuovo ordine </button> 
+	<label> Quantit&agrave; massima : </label> <input type="number" id="max" value="30" placheholder="Quantit&agrave; massima" min="1"/> <br/>
+	<button id="vis" onclick="display()"> Effettua un nuovo ordine </button>
+	<button id="cmax" onclick="cambiaMax()"> Cambia la dimensione del deposito </button>
 	<div id="data" class="hide">
 		<label> Nome elemento: </label>
 		<input type="text" id="nome" placeholder="nome elemento" />
