@@ -51,7 +51,7 @@ function addItem(){
 }
 
 function cambiaMax(){
-	qmax= parseInt(document.getElementById("cmax").value);
+	qmax= parseInt(document.getElementById("max").value);
 	if(qatt>qmax){
 		alert("Attenzione!! La capacita' massima e' stata impostata al di sotto della quantita' immagazzinata!!");
 	}
