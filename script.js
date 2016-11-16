@@ -1,6 +1,9 @@
 var qmax = 30;
 var qatt = 0;
 
+/**
+ * Funzione che nasconde i punsanti e mostra il contenuto per l'aggiunta di un nuovo item  
+*/
 function display(){
 	document.getElementById("vis").className = "hide";
 	document.getElementById("cmax").className = "hide";
@@ -8,12 +11,18 @@ function display(){
 	
 }
 
+/**
+ * Funzione che nasconde il contenuto per l'aggiunta di un nuovo item e mostra i pulsanti per poterli ri-visualizzare e modificare la capacita' 
+*/
 function nascondi(){
 	document.getElementById("vis").className = "";
 	document.getElementById("cmax").className = "";
 	document.getElementById("data").className = "hide";
 }
 
+/**
+ * aggiunge un nuovo elemento alla tabella o aumenta la quantita' di uno gia' presente
+*/
 function addItem(){
 	var nome = document.getElementById("nome").value;
 	var qta = document.getElementById("qta").value;
@@ -50,6 +59,9 @@ function addItem(){
 	document.getElementById("qta").value = "";
 }
 
+/**
+ * Funzione che permette di modificare la quantita' massima
+*/
 function cambiaMax(){
 	qmax= parseInt(document.getElementById("max").value);
 	if(qatt>qmax){
